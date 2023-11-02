@@ -1,6 +1,9 @@
 server:
   port: 8090
 
+cloud:
+  eureka-host: localhost
+
 spring:
   application:
     name: exchange-processing-service
@@ -32,4 +35,4 @@ eureka:
   client:
     enabled: false
     serviceUrl:
-      defaultZone: http://localhost:8761/eureka/
+      defaultZone: http://${cloud.eureka-host}:8761/eureka/

@@ -10,6 +10,7 @@
         <module name="CurrencyApp" />
         <module name="eureka-service" />
         <module name="exchange-processing" />
+        <module name="gateway-service" />
       </profile>
     </annotationProcessing>
   </component>
@@ -18,6 +19,7 @@
       <module name="CurrencyApp" options="-parameters" />
       <module name="eureka-service" options="-parameters" />
       <module name="exchange-processing" options="-parameters" />
+      <module name="gateway-service" options="-parameters" />
     </option>
   </component>
 </project>
