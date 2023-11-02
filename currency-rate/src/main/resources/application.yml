@@ -1,6 +1,17 @@
 server:
   port: 8085
 
+spring:
+  application:
+    name: currency-rate-service
+
+eureka:
+  client:
+    enabled: false
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+
 currency:
   client:
     url: "http://www.cbr.ru/scripts/XML_daily.asp"
+
