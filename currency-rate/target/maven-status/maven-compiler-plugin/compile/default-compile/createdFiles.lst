@@ -1,0 +1,9 @@
+com/dimathicc/currencyapp/controller/CurrencyController.class
+com/dimathicc/currencyapp/schema/ObjectFactory.class
+com/dimathicc/currencyapp/schema/ValCurs.class
+com/dimathicc/currencyapp/schema/ValCurs$Valute.class
+com/dimathicc/currencyapp/client/CbrCurrencyRateClient.class
+com/dimathicc/currencyapp/config/CurrencyClientConfig.class
+com/dimathicc/currencyapp/service/CbrService.class
+com/dimathicc/currencyapp/CurrencyAppApplication.class
+com/dimathicc/currencyapp/client/HttpCurrencyDateRateClient.class

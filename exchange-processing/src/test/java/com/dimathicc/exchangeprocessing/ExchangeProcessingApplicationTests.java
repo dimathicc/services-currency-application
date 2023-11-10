@@ -6,8 +6,4 @@ import org.springframework.boot.test.context.SpringBootTest;
 @SpringBootTest
 class ExchangeProcessingApplicationTests {
 
-    @Test
-    void contextLoads() {
-    }
-
 }

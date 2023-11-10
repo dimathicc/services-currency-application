@@ -2,7 +2,10 @@ server:
   port: 8090
 
 cloud:
+  db-host: localhost
   eureka-host: localhost
+  currency-url: http://localhost:8080
+
 
 spring:
   application:
@@ -15,24 +18,24 @@ spring:
 
 
   datasource:
-    driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://localhost:5432/processing
+    url: jdbc:postgresql://${cloud.db-host}:5432/processing
     username: postgres
     password: docker
+    driverClassName: org.postgresql.Driver
 
   flyway:
     enabled: true
     locations: classpath:db
-    url: jdbc:postgresql://localhost:5432/processing
+    url: jdbc:postgresql://${cloud.db-host}:5432/processing
     user: postgres
     password: docker
 
 service:
   currency:
-    url: http://localhost:8085
+    url: ${cloud.currency-url}
 
 eureka:
   client:
     enabled: false
     serviceUrl:
-      defaultZone: http://${cloud.eureka-host}:8761/eureka/
+      defaultZone: http://${cloud.eureka-host}:8761/eureka
