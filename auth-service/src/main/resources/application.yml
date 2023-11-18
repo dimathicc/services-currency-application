@@ -19,4 +19,5 @@ spring:
 eureka:
   client:
     enabled: false
-    service-url: http://${cloud.eurika-host}:8761/eureka
+    serviceUrl:
+      defaultZone: http://${cloud.eurika-host}:8761/eureka

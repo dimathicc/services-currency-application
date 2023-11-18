@@ -47,10 +47,7 @@ public class OAuthServerConfiguration extends AuthorizationServerConfigurerAdapt
                 .scopes("web").and()
                 .withClient("processing")
                 .secret(passwordEncoder.encode("processing123"))
-                .authorizedGrantTypes("password").scopes("system").and()
-                .withClient("history")
-                .secret(passwordEncoder.encode("history123"))
-                .authorizedGrantTypes("authorization_code","password","refresh_token")
+                .authorizedGrantTypes("password")
                 .scopes("system");
 
     }
