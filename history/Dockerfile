@@ -1,5 +1,5 @@
 FROM openjdk:21
-ADD build/libs/history-0.0.1-SNAPSHOT.jar app.jar
+ADD build/libs/*.jar app.jar
 
 ENV DB_HOST=localhost
 ENV EUREKA_HOST=localhost

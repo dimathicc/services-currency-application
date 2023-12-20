@@ -14,7 +14,7 @@ class AccountEventKafkaListener(private val repository: AccountEventRepository) 
 
     @KafkaListener(topics = ["account-events"])
     fun consumeEvent(record: ConsumerRecord<Long, String>) {
-        val key = record.key()
+//        val key = record.key()
         val value = record.value()
 
         val event: AccountEvent = try {
